@@ -11,12 +11,13 @@ Docsify Unhashtag Link Plugin is a plugin for Docsify that modifies URLs for spe
 
 ### Include the plugin in your Docsify setup.
 
-```
+```html
 <script src="./docsify-unhashtaglink-plugin.js"></script>
 ```
 
 ### Optionally, configure the file types you want to clean.
 
+```html
 <script>
   window.$docsify = {
     name: '',
@@ -24,6 +25,7 @@ Docsify Unhashtag Link Plugin is a plugin for Docsify that modifies URLs for spe
     unhashtagLinkExtensions: ['.pdf', '.html', '.docx'] // Override file types here
   };
 </script>
+```
 
 ## Usage
 
@@ -41,7 +43,7 @@ index.html:
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
   <title>Docsify with Unhashtag Link Plugin</title>
-  <link rel="stylesheet" href="https://tim-montmorency.com/presentation/css/tim-dark.css" />
+  <link rel="stylesheet" //cdn.jsdelivr.net/npm/docsify/themes/vue.min.css" />
 </head>
 <body>
   <div id="app"></div>
