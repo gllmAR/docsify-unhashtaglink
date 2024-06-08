@@ -12,7 +12,7 @@ Docsify Unhashtag Link Plugin is a plugin for Docsify that modifies URLs for spe
 
 ## Examples
 
-* [linkToPDF]()
+* [linkToPDF](./file.pdf)
 
 ## Installation
 
