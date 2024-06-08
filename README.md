@@ -1,11 +1,18 @@
 # Docsify-unhashtaglink
 Docsify Unhashtag Link Plugin is a plugin for Docsify that modifies URLs for specified file types by removing hash routing, ensuring they resolve correctly.
 
+[See it in online in Docsify](https://gllmar.github.io/docsify-unhashtaglink/#/)
+
 ## Features
 
 - Automatically cleans URLs for specified file types, removing hash routing.
 - Default file types: .pdf, .html.
 - Supports overriding file types from the HTML configuration.
+
+
+## Examples
+
+* [linkToPDF]()
 
 ## Installation
 
