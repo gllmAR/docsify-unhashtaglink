@@ -2,20 +2,15 @@
 let supportedFileExtensions = ['.pdf', '.html'];
 
 function initLinkConverter() {
-    console.log('Initializing Link Converter');
     handleLinks();
 }
 
 function handleLinks() {
-    console.log('Handling Links');
     const links = document.querySelectorAll('a[href]');
-    console.log('Found links:', links.length); // Log the number of links found
     links.forEach(link => {
         const url = link.getAttribute('href').toLowerCase();
-        console.log('Processing link:', url);
         if (supportedFileExtensions.some(ext => url.endsWith(ext))) {
             const newUrl = resolveUrl(link.getAttribute('href'));
-            console.log('Updating link:', url, 'to', newUrl);
             link.href = newUrl;
         }
     });
@@ -34,10 +29,7 @@ function resolveUrl(href) {
         resolvedUrl = new URL(href, base).href;
     }
 
-    resolvedUrl = resolvedUrl.replace('#/', '');
-    console.log('Base URL:', base); // Debug output
-    console.log('Resolved URL:', resolvedUrl); // Debug output
-    return resolvedUrl;
+    return resolvedUrl.replace('#/', '');
 }
 
 function setSupportedFileExtensions(extensions) {
@@ -48,16 +40,14 @@ function setSupportedFileExtensions(extensions) {
 (function() {
     window.$docsify = window.$docsify || {};
     window.$docsify.plugins = (window.$docsify.plugins || []).concat(function(hook, vm) {
-        console.log('Docsify plugin initialization');
         hook.init(function() {
             if (window.$docsify.unhashtagLinkExtensions) {
                 setSupportedFileExtensions(window.$docsify.unhashtagLinkExtensions);
-                console.log('Overridden file extensions:', supportedFileExtensions);
             }
         });
         hook.doneEach(function() {
-            console.log('Docsify doneEach hook triggered inside plugin');
             initLinkConverter();
         });
     });
 })();
+
