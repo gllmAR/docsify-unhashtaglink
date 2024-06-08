@@ -62,7 +62,7 @@ index.html:
     };
   </script>
   <script src="https://unpkg.com/docsify/lib/docsify.min.js"></script>
-  <script src="./docsify-unhashtaglink-plugin.js"></script>
+  <script src="https://gllmar.github.io/docsify-unhashtaglink/docsify-unhashtaglink.js"></script>
 </body>
 </html>
 ```
