@@ -19,7 +19,7 @@ Docsify Unhashtag Link Plugin is a plugin for Docsify that modifies URLs for spe
 ### Include the plugin in your Docsify setup.
 
 ```html
-<script src="./docsify-unhashtaglink-plugin.js"></script>
+<script src="https://gllmar.github.io/docsify-unhashtaglink/docsify-unhashtaglink.js"></script>
 ```
 
 ### Optionally, configure the file types you want to clean.
